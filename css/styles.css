@@ -77,7 +77,7 @@ footer {
 }
 
 .navigation-link:hover,
-.navigation-link:active {
+.navigation-link:focus {
     color: #404BBF;
 }
 
@@ -94,7 +94,7 @@ footer {
 }
 
 .address-link:hover
-.address-link:active {
+.address-link:focus {
     color: #404BBF;
 }
 
