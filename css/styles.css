@@ -21,21 +21,6 @@ h2 {
     color: #2E2F42;
 }
 
-h3 {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 120%;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
-}
-
-p {
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
-
 button {
     cursor: pointer;
 }
@@ -117,13 +102,47 @@ footer {
     background-color: #404BBF;
 }
 
+/* Features */
+.features-item-header {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+
+.features-item-p {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
 /* Our team */
 .team-section {
     background: #F4F4FD;
 }
 
-.team-section h3 {
+.team-section-item {
+    background-color: #FFFFFF;
+}
+
+.team-section-item-header {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    text-transform: capitalize;
+
     text-align: center;
+}
+
+.team-section-item-p {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #434455;
 }
 
 /* Footer */
