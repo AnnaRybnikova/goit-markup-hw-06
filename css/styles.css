@@ -12,10 +12,6 @@ a {
     text-decoration: none;
 }
 
-button {
-    cursor: pointer;
-}
-
 /* header */
 .logo {
     font-family: "Raleway", sans-serif;
@@ -56,9 +52,9 @@ button {
     color: #434455;
 }
 
-.address-link:hover
+.address-link:hover,
 .address-link:focus {
-    color: #404BBF;
+    color: #404bbf;
 }
 
 /* Main section */
@@ -82,9 +78,10 @@ button {
     line-height: 150%;
     letter-spacing: 0.04em;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
-.order-btn:hover
+.order-btn:hover,
 .order-btn:focus {
     background-color: #404BBF;
 }
@@ -179,5 +176,8 @@ button {
 }
 
 .footer-p {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
     color: #F4F4FD;
 }
