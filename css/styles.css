@@ -120,6 +120,10 @@ a {
     line-height: 107%;
     letter-spacing: 0.02em;
     text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 496px;
     color: #FFFFFF;
 }
 
