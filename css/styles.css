@@ -35,10 +35,10 @@ img {
 
 .container {
     width: 1440px;
+    margin: 0 auto;
 }
 
-/* header */
-.header {
+.header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -139,7 +139,11 @@ img {
     letter-spacing: 0.04em;
     color: #FFFFFF;
     cursor: pointer;
+    /* вимкнення стандартного оформлення кнопки */
+    border: none;
     padding: 16px 32px;
+    /* для можливості центрувати кнопку через властивість margin */
+    display: block;
     margin-right: auto;
     margin-left: auto;
 }
