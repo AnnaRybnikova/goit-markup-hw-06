@@ -91,6 +91,8 @@ img {
     line-height: 150%;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    /* ПИТАННЯ: чому саме у a, а не, наприклад, у item списку, чи самому списку, чи container/header */
+    padding: 24px 0;
 }
 
 .navigation-link:hover,
@@ -107,11 +109,10 @@ img {
     gap: 40px;
     justify-content: flex-end;
 }
-
-.address-link-item {
-    /* ПИТАННЯ: чому саме у item списку, а не, наприклад, у самому списку чи container/header */
+/* ПИТАННЯ: чому тут це можна не вказувати вже */
+/* .address-link-item {
         padding: 24px 0;
-}
+} */
 
 .address-link {
     font-weight: 400;
