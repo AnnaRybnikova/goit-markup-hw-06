@@ -34,16 +34,20 @@ img {
 }
 
 .container {
-    width: 1440px;
+    /* формула = Загальна ширина - (відступ справа + відступ зліва) */
+    width: 1158px;
     margin: 0 auto;
+}
+
+/* header */
+.header {
+    border-bottom: 1px solid #E7E9FC;
 }
 
 .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 24px 156px;
-    border-bottom: 1px solid #E7E9FC;
 }
 
 .navigation {
@@ -62,14 +66,23 @@ img {
     color: #4D5AE5;
 }
 
+.header-logo {
+    /* чому саме у логотипі, а не у списку */
+    margin-right: 76px;
+}
+
 .logo-span-dark {
     color: #2E2F42;
 }
 
 .navigation-list {
-    margin-left: 76px;
     display: flex;
     gap: 40px;
+}
+
+.navigation-list-item {
+    /* ПИТАННЯ: чому саме у item списку, а не, наприклад, у самому списку чи container/header */
+    padding: 24px 0;
 }
 
 .navigation-link {
@@ -93,6 +106,11 @@ img {
     display: flex;
     gap: 40px;
     justify-content: flex-end;
+}
+
+.address-link-item {
+    /* ПИТАННЯ: чому саме у item списку, а не, наприклад, у самому списку чи container/header */
+        padding: 24px 0;
 }
 
 .address-link {
