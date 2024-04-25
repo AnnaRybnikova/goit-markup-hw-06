@@ -39,6 +39,20 @@ img {
     margin: 0 auto;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /* header */
 .header {
     border-bottom: 1px solid #E7E9FC;
@@ -186,7 +200,7 @@ img {
 
 .features-list-item {
     /* 100% - кількість_проміжків_у_рядку * значення_одного_проміжку) / кількість_елементів_у_рядку */
-    flex-basis: calc((100% - 3 * 24) / 4);
+    flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 .features-item-header {
@@ -229,6 +243,7 @@ img {
 
 .team-section-item {
     background-color: #FFFFFF;
+    border-radius: 0 0 4px 4px;
     /* 100% - кількість_проміжків_у_рядку * значення_одного_проміжку) / кількість_елементів_у_рядку */
     /* flex-basis - ширина у flex-container */
     flex-basis: calc((100% - 3 * 24px) / 4);
@@ -283,7 +298,6 @@ img {
 }
 
 .portfolio-section-list-item {
-    border-radius: 0 0 4px 4px;
     flex-basis: calc((100% - 2 * 24px) / 3);
 }
 
