@@ -110,7 +110,7 @@ img {
     justify-content: flex-end;
 }
 /* ПИТАННЯ: чому тут це можна не вказувати вже */
-/* .address-link-item {
+/* .address-list-item {
         padding: 24px 0;
 } */
 
@@ -131,10 +131,6 @@ img {
 .main-section {
     background: #2E2F42;
     padding: 188px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 48px;
 }
 
 .main-header {
@@ -146,8 +142,10 @@ img {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    width: 496px;
+    /* не width, бо може бути менше */
+    max-width: 496px;
     color: #FFFFFF;
+    margin-bottom: 48px;
 }
 
 .order-btn {
@@ -157,14 +155,18 @@ img {
     line-height: 150%;
     letter-spacing: 0.04em;
     color: #FFFFFF;
-    cursor: pointer;
     /* вимкнення стандартного оформлення кнопки */
     border: none;
-    padding: 16px 32px;
+    /* визначення заокруглень */
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 16px 0;
     /* для можливості центрувати кнопку через властивість margin */
     display: block;
     margin-right: auto;
     margin-left: auto;
+    /* ПИТАННЯ чому треба "визначення мінімальної ширини кнопки" */
+    min-width: 169px;
 }
 
 .order-btn:hover,
@@ -180,6 +182,11 @@ img {
 .features-list {
     display: flex;
     gap: 24px;
+}
+
+.features-list-item {
+    /* 100% - кількість_проміжків_у_рядку * значення_одного_проміжку) / кількість_елементів_у_рядку */
+    width: calc((100% - 3 * 24) / 4);
 }
 
 .features-item-header {
@@ -222,14 +229,12 @@ img {
 
 .team-section-item {
     background-color: #FFFFFF;
+    /* 100% - кількість_проміжків_у_рядку * значення_одного_проміжку) / кількість_елементів_у_рядку */
+    width: calc((100% - 3 * 24) / 4);
 }
 
 .team-section-item-text-container {
-    padding: 32px 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: center;
+    padding: 32px 0;
 }
 
 .team-section-item-header {
@@ -240,6 +245,7 @@ img {
     color: #2E2F42;
     text-transform: capitalize;
     text-align: center;
+    margin-bottom: 8px;
 }
 
 .team-section-item-p {
@@ -247,6 +253,7 @@ img {
     line-height: 150%;
     letter-spacing: 0.02em;
     color: #434455;
+    text-align: center;
 }
 
 /* Portfolio */
@@ -269,19 +276,20 @@ img {
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
-    margin-bottom: 48px;
+    /* визначення проміжку між рядками при flex-wrap: wrap;*/
+    row-gap: 48px;
     border: 1px 
 }
 
+.portfolio-section-list-item {
+    width: calc((100% - 48px) / 3);
+}
+
 .portfolio-section-item-text-container {
-    border-bottom: 1px solid #E7E9FC;
-    border-left: 1px solid #E7E9FC;
-    border-right: 1px solid #E7E9FC;
-    padding: 32px 16px;
-    display: flex;
-    gap: 8px;
-    flex-direction: column;
-    align-items: flex-start;
+    border: 1px solid #E7E9FC;
+    /* скидання конкретної рамки */
+    border-top: none;
+    padding: 32px 0;
 }
 
 .portfolio-section-item-header {
@@ -307,6 +315,12 @@ img {
     padding: 100px 0;
 }
 
+.footer-logo {
+    /* ПИТАННЯ: чому inline-block, а не block */
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
 .logo-span-light {
     color: #F4F4FD;
 }
@@ -316,5 +330,4 @@ img {
     line-height: 150%;
     letter-spacing: 0.02em;
     color: #F4F4FD;
-    margin-top: 16px;
 }
