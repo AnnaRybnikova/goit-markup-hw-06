@@ -29,6 +29,10 @@ a {
     text-decoration: none;
 }
 
+img {
+    display: block;
+}
+
 .container {
     width: 1440px;
 }
@@ -146,8 +150,8 @@ a {
 }
 
 /* Features */
-.section {
-    padding: 120px 156px;
+.features-section {
+    padding: 120px 0;
 }
 
 .features-list {
@@ -174,6 +178,7 @@ a {
 /* Our team */
 .team-section {
     background: #F4F4FD;
+    padding: 120px 0;
 }
 
 .team-section-list {
@@ -222,6 +227,10 @@ a {
 }
 
 /* Portfolio */
+.portfolio-section {
+    padding: 120px 0;
+}
+
 .portfolio-section-header {
     font-weight: 700;
     font-size: 36px;
@@ -272,13 +281,7 @@ a {
 /* Footer */
 .footer {
     background: #2E2F42;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 156px;
-}
-
-.footer-container {
-    width: 264px;
+    padding: 100px 0;
 }
 
 .logo-span-light {
