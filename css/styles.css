@@ -309,6 +309,29 @@ img {
     letter-spacing: 0.02em;
     color: #434455;
     text-align: center;
+    margin-bottom: 8px;
+}
+
+.social-media-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-item {
+    background-color: #4D5AE5;
+    fill: #FFFFFF;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-section-item:hover .social-media-item {
+    background-color: #404BBF;
 }
 
 /* Portfolio */
