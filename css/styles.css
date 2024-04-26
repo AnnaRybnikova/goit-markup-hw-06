@@ -454,6 +454,11 @@ img {
     padding: 100px 0;
 }
 
+.footer-container {
+    display: flex;
+    gap: 120px;
+}
+
 .footer-logo {
     /* ПИТАННЯ: чому inline-block, а не block */
     display: inline-block;
@@ -470,4 +475,12 @@ img {
     letter-spacing: 0.02em;
     color: #F4F4FD;
     max-width: 264px;
+}
+
+.social-media-p {
+    margin-bottom: 16px;
+}
+
+.footer .social-media-item:hover {
+    background-color: #31D0AA;
 }
