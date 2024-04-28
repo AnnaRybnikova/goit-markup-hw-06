@@ -244,10 +244,6 @@ img {
     padding: 24px 0;
 }
 
-.features-item-icon {
-
-}
-
 .features-item-header {
     font-weight: 500;
     font-size: 20px;
@@ -334,9 +330,8 @@ img {
     align-items: center;
 }
 
-.social-media-item {
+.social-media-link {
     background-color: #4D5AE5;
-    fill: #FFFFFF;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -348,8 +343,12 @@ img {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-section-item:hover .social-media-item {
+.team-section-item:hover .social-media-link {
     background-color: #404BBF;
+}
+
+.social-media-icon {
+    fill: #FFFFFF;
 }
 
 /* Portfolio */
@@ -481,6 +480,6 @@ img {
     margin-bottom: 16px;
 }
 
-.footer .social-media-item:hover {
+.footer .social-media-link:hover {
     background-color: #31D0AA;
 }
