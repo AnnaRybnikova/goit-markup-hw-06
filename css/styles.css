@@ -420,6 +420,11 @@ img {
 }
 
 .portfolio-list-item-overlay {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
+    
     background-color: #4D5AE5;
     padding: 40px 32px;
 
@@ -438,13 +443,6 @@ img {
 
 .portfolio-section-list-item:hover .portfolio-list-item-overlay {
     transform: translateY(0);
-}
-
-.portfolio-list-item-overlay-text {
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.02em;
-    color: #F4F4FD;
 }
 
 /* Footer */
