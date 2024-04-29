@@ -464,6 +464,7 @@ img {
 
 .footer-container {
     display: flex;
+    align-items: baseline;
     gap: 120px;
 }
 
@@ -485,10 +486,20 @@ img {
     max-width: 264px;
 }
 
-.social-media-p {
+.footer-social-media-p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
     margin-bottom: 16px;
 }
 
-.footer .social-media-link:hover {
+.social-media-list.footer-list {
+    gap: 16px;
+}
+
+.footer-list .social-media-link:hover,
+.footer-list .social-media-link:focus {
     background-color: #31D0AA;
 }
