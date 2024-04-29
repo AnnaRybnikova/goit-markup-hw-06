@@ -59,6 +59,9 @@ img {
 /* header */
 .header {
     border-bottom: 1px solid #E7E9FC;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -98,7 +101,6 @@ img {
 }
 
 .navigation-list-item {
-    /* ПИТАННЯ: чому саме у item списку, а не, наприклад, у самому списку чи container/header */
     padding: 24px 0;
 }
 
@@ -108,7 +110,6 @@ img {
     line-height: 150%;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    /* ПИТАННЯ: чому саме у a, а не, наприклад, у item списку, чи самому списку, чи container/header */
     padding: 24px 0;
     position: relative;
     transition-property: color;
@@ -121,7 +122,11 @@ img {
     color: #404BBF;
 }
 
-.navigation-link:hover::after {
+.navigation-link.active {
+    color: #404BBF;
+}
+
+.navigation-link.active::after {
     display: block;
     content: "";
     background-color: #404BBF;
@@ -129,6 +134,7 @@ img {
     height: 4px;
     border-radius: 2px;
     position: absolute;
+    left: 0px;
     bottom: -4px;
 }
 
@@ -172,6 +178,10 @@ img {
     background-repeat: no-repeat;
     background-position: left top;
     background-size: cover;
+    /* щоб фонове зображення в блоці під хедером не розтягувалось ширше свого оригінального розміру */
+    max-width: 1440px;
+    /* для вирівнювання фонового зображення відносно його власної ширини та висоти */
+    background-position: center;
 
     padding: 188px 0;
 }
@@ -240,8 +250,11 @@ img {
     border-radius: 4px;
     border: 1px solid #8E8F99;
     margin-bottom: 8px;
-    text-align: center;
-    padding: 24px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
 }
 
 .features-item-header {
