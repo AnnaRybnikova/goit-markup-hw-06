@@ -361,7 +361,7 @@ img {
 
 .team-section-item:hover .social-media-link,
 /* для focus ОБОВʼЯЗКОВО href має бути */
-.team-section-item:focus .social-media-link {
+.social-media-link:focus {
     background-color: #404BBF;
 }
 
