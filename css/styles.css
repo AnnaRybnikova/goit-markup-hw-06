@@ -360,6 +360,7 @@ img {
 }
 
 .team-section-item:hover .social-media-link,
+/* для focus ОБОВʼЯЗКОВО href має бути */
 .team-section-item:focus .social-media-link {
     background-color: #404BBF;
 }
@@ -506,6 +507,7 @@ img {
 }
 
 .footer-list .social-media-link:hover,
+/* для focus ОБОВʼЯЗКОВО href має бути */
 .footer-list .social-media-link:focus {
     background-color: #31D0AA;
 }
