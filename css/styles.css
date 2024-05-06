@@ -33,6 +33,17 @@ img {
     display: block;
 }
 
+input {
+    font-family: inherit;
+}
+
+button {
+    font-family: inherit;
+    color: currentColor;
+    /* вимкнення стандартного оформлення кнопки */
+    border: none;
+}
+
 .container {
     /* Формула = Загальна ширина - (відступ справа + відступ зліва) */
     width: 1158px;
@@ -209,8 +220,6 @@ img {
     line-height: 150%;
     letter-spacing: 0.04em;
     color: #FFFFFF;
-    /* вимкнення стандартного оформлення кнопки */
-    border: none;
     /* визначення заокруглень */
     border-radius: 4px;
     cursor: pointer;
@@ -513,4 +522,68 @@ img {
 /* для focus ОБОВʼЯЗКОВО href має бути */
 .footer-list .social-media-link:focus {
     background-color: #31D0AA;
+}
+
+.social-media-container {
+    margin-right: 80px;
+}
+
+/* Subscription footer form */
+.subscription-form {
+    display: flex;
+    gap: 24px;
+}
+
+.subscribe-label {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.subscribe-input {
+    background-color: #2E2F42;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    padding: 0 16px;
+}
+
+.subscribe-input::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 200%;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+
+.subscribe-btn {
+    background-color: #4D5AE5;
+    border-radius: 4px;
+    padding: 8px 24px;
+    width: 165px;
+    height: 40px;
+    align-self: self-end;
+    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subscribe-icon {
+    fill: #FFFFFF;
 }
