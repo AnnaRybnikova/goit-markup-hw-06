@@ -731,11 +731,11 @@ opacity: 1;
 }
 
 .modal-form-text-input-container {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
-.modal-form-text-input-container:not(:last-of-type) {
-    margin-bottom: 8px;
+.modal-form-textarea-container {
+    margin-bottom: 16px;
 }
 
 .modal-form-input-container {
@@ -810,14 +810,6 @@ opacity: 1;
 
 .modal-form-textarea:focus {
     border-color: #4D5AE5;
-}
-
-.modal-form-checkbox-input-container {
-    margin-bottom: 24px;
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
 }
 
 .modal-form-checkbox-input {
