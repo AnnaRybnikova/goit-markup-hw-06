@@ -506,13 +506,13 @@
         </p>
         <form name="modal_form" autocomplete="off">
           <div class="modal-form-text-input-container">
-            <label class="modal-form-label" for="name" autofocus>Name</label>
+            <label class="modal-form-label" for="user-name" autofocus>Name</label>
             <div class="modal-form-input-container">
               <input
                 class="modal-form-input"
                 type="text"
-                name="name"
-                id="name"
+                name="user-name"
+                id="user-name"
               />
               <svg class="modal-form-input-icon" height="24" width="18">
                 <use href="./images/icons.svg#icon-person"></use>
@@ -548,12 +548,13 @@
             </div>
           </div>
           <div class="modal-form-text-input-container">
-            <label class="modal-form-label">Comment</label>
+            <label class="modal-form-label" for="user-comment">Comment</label>
             <textarea
               class="modal-form-textarea"
-              name="comment"
+              name="user-comment"
               rows="6"
               placeholder="Text input"
+              id="user-comment"
             ></textarea>
           </div>
           <div class="modal-form-checkbox-input-container">
@@ -561,16 +562,16 @@
               <input
                 class="modal-form-checkbox-input"
                 type="checkbox"
-                name="terms"
-                value="accepted"
-                id="terms"
+                name="user-privacy"
+                value="true"
+                id="user-privacy"
                 required
               />
               <svg class="modal-form-checkbox-icon" height="16" width="16">
                 <use href="./images/icons.svg#icon-ok"></use>
               </svg>
             </div>
-            <label class="modal-form-checkbox-label" for="terms">
+            <label class="modal-form-checkbox-label" for="user-privacy">
               I accept the terms and conditions of the
               <a class="modal-form-checkbox-label link" href=""
                 >Privacy Policy</a
