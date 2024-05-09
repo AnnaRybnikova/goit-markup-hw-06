@@ -165,10 +165,6 @@ button {
     gap: 40px;
     justify-content: flex-end;
 }
-/* ПИТАННЯ: чому тут це можна не вказувати вже */
-/* .address-list-item {
-        padding: 24px 0;
-} */
 
 .address-link {
     font-weight: 400;
@@ -194,7 +190,6 @@ button {
             rgba(46, 47, 66, 0.7)),
             url("../images/office.jpg");
     background-repeat: no-repeat;
-    background-position: left top;
     background-size: cover;
     /* щоб фонове зображення в блоці під хедером не розтягувалось ширше свого оригінального розміру */
     max-width: 1440px;
@@ -234,7 +229,6 @@ button {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    /* ПИТАННЯ чому треба "визначення мінімальної ширини кнопки" */
     min-width: 169px;
     transition-property: background-color;
     transition-duration: 250ms;
@@ -494,7 +488,6 @@ button {
 }
 
 .footer-logo {
-    /* ПИТАННЯ: чому inline-block, а не block */
     display: inline-block;
     margin-bottom: 16px;
 }
@@ -634,10 +627,9 @@ button {
 
     /* анімуємо появу через 'прозорість' */
     /* повністю прозорий елемент */
-    /* opacity: 0; */
-opacity: 1;
+    opacity: 0;
     /* курсор НЕ реагує на контент */
-    /* pointer-events: none; */
+    pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     /* плавність прозорості появи елементу */
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
