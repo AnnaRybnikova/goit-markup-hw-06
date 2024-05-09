@@ -598,7 +598,6 @@ button {
     display: flex;
 
     align-items: center;
-    gap: 16px;
     justify-content: center;
     transition-property: background-color;
     transition-duration: 250ms;
@@ -612,6 +611,9 @@ button {
 
 .subscribe-icon {
     fill: #FFFFFF;
+
+/* задаємо тут, а не gap = 16px */
+    margin-left: 16px;
 }
 
 /* Modal */
@@ -729,11 +731,11 @@ opacity: 1;
 }
 
 .modal-form-text-input-container {
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
-.modal-form-text-input-container:last-of-type {
-    margin-bottom: 16px;
+.modal-form-text-input-container:not(:last-of-type) {
+    margin-bottom: 8px;
 }
 
 .modal-form-input-container {
@@ -779,13 +781,6 @@ opacity: 1;
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/* .modal-form-input-icon::after {
-    border: 1.25px solid #000;
-    width: 18px;
-    height: 0px;
-    transform: rotate(-90deg);
-} */
 
 .modal-form-input:focus + .modal-form-input-icon {
     fill: #4D5AE5;
