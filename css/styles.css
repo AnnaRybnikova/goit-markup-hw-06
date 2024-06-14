@@ -113,6 +113,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 .navigation {
@@ -199,6 +200,11 @@ button {
 }
 
 .menu-open-burger-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    
     background-color: transparent;
 
     padding: 0;
