@@ -27,6 +27,7 @@ li {
 
 a {
     text-decoration: none;
+    font-style: normal;
 }
 
 img {
@@ -104,6 +105,8 @@ button {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 1px 6px rgba(46, 47, 66, 0.08);
+
+    padding: 16px 0;
 }
 
 .header-container {
@@ -128,17 +131,12 @@ button {
     color: #4D5AE5;
 }
 
-.header-logo {
-    margin-right: 76px;
-}
-
 .logo-span-dark {
     color: #2E2F42;
 }
 
 .navigation-list {
-    display: flex;
-    gap: 40px;
+    display: none;
 }
 
 .navigation-list-item {
@@ -181,20 +179,14 @@ button {
 }
 
 .address {
-    font-style: normal;
+    display: none;
 }
 
 .address-list {
     display: flex;
-    gap: 40px;
-    justify-content: flex-end;
 }
 
 .address-link {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.02em;
     color: #434455;
     transition-property: color;
     transition-duration: 250ms;
@@ -204,6 +196,144 @@ button {
 .address-link:hover,
 .address-link:focus {
     color: #404bbf;
+}
+
+.menu-open-burger-btn {
+    background-color: transparent;
+
+    padding: 0;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Mobile menu */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+
+    background-color: #FFFFFF;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    padding: 72px 24px 40px 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+
+    overflow: auto;
+}
+
+.mobile-menu-close-btn {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 24px;
+    right: 24px;
+
+    /* обнулення дефолтних відступів, які елемент має від браузера */
+    padding: 0;
+    
+    /* для визначення стилю курсору */
+    cursor: pointer;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-close-btn:hover,
+.mobile-menu-close-btn:focus {
+    background-color: #404BBF;
+    border: none;
+}
+
+.mobile-menu-close-icon {
+    fill: #2E2F42;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-close-btn:hover .mobile-menu-close-icon,
+.mobile-menu-close-btn:focus .mobile-menu-close-icon {
+    fill: #FFFFFF;
+}
+
+.mobile-menu-nav {
+    /* для того, щоб контейнери не 'злипались' при зменшенні висоти девайса */
+    margin-bottom: 24px;
+}
+
+.mobile-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.mobile-menu-link {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 111%;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-link:hover,
+.mobile-menu-link:focus,
+.mobile-menu-link.active {
+        color: #404BBF;
+}
+
+.mobile-menu-address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    margin-bottom: 48px;
+}
+
+.mobile-menu-address-link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: #434455;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-address-link:hover,
+.mobile-menu-address-link:focus {
+    color: #4D5AE5;
+}
+
+.mobile-menu > .social-media-list {
+    gap: 40px;
 }
 
 /* Hero section */
@@ -618,7 +748,7 @@ button {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-overlay.is-open {
+.is-open {
     /* повна НЕ прозорість */
     opacity: 1;
     /* щоб курсор реагував на контент */
@@ -862,6 +992,37 @@ button {
         width: 736px;
     }
 
+    /* Header */
+    .header {
+        padding: 0;
+    }
+
+    .header-logo {
+        margin-right: 120px;
+    }
+
+    .navigation-list {
+        display: flex;
+        gap: 40px;
+    }
+
+    .address {
+        display: block;
+        padding: 16px 0;
+    }
+
+    .address-list {
+        flex-direction: column;
+        gap: 12px;
+        align-items: end;
+    }
+
+    .address-link {
+        font-size: 12px;
+        line-height: 117%;
+        letter-spacing: 0.04em;
+    }
+
     /* Hero */
     .hero-section {
         padding: 112px 0;
@@ -966,6 +1127,11 @@ button {
         width: 1158px;
         /* Паддінги (з Layout grid) */
         padding: 0 15px;
+    }
+
+    /* Header */
+    .header-logo {
+        margin-right: 76px;
     }
 
     /* Hero */
@@ -1084,5 +1250,17 @@ button {
     .subscribe-input {
         opacity: 1;
         transition: none;
+    }
+
+    .address-list {
+        flex-direction: row;
+        gap: 40px;
+        justify-content: flex-end;
+    }
+
+    .address-link {
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
     }
 }
